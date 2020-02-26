@@ -87,3 +87,8 @@ C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\
 C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Produtos\Details.g.cshtml.cs
 C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Produtos\Edit.g.cshtml.cs
 C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Produtos\Index.g.cshtml.cs
+C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Historicos\Create.g.cshtml.cs
+C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Historicos\Delete.g.cshtml.cs
+C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Historicos\Details.g.cshtml.cs
+C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Historicos\Edit.g.cshtml.cs
+C:\Users\ODR\source\repos\Controle_de_Estoque\ControleDeEstoque\ControleEstoque\obj\Debug\netcoreapp2.1\Razor\Views\Historicos\Index.g.cshtml.cs
