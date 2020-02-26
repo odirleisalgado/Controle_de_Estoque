@@ -92,7 +92,7 @@ using ControleEstoque.Models;
             WriteLiteral("\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<div>\r\n    <button class=\"btn btn-default\">\r\n        ");
             EndContext();
             BeginContext(572, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d41552b0ba74796963ca427dac31704", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6919cc02becf4ca28232d87287ab459c", async() => {
                 BeginContext(648, 6, true);
                 WriteLiteral("Editar");
                 EndContext();
@@ -128,7 +128,7 @@ using ControleEstoque.Models;
             WriteLiteral("\r\n    </button>\r\n    <button class=\"btn btn-default\">\r\n        ");
             EndContext();
             BeginContext(721, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "611c439408c84915a148f4578badfb1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83b1ea506ea54fb2a843d0b9cc25654f", async() => {
                 BeginContext(773, 6, true);
                 WriteLiteral("Voltar");
                 EndContext();
