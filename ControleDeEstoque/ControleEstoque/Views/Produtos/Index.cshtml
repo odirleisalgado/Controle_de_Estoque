@@ -5,44 +5,51 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Produtos Cadastrados</h2>
+<hr />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<button class="btn btn-success">
+    <a asp-action="Create" style="text-decoration:none; color:white;">Adicionar +</a>
+</button>
+
+<br /> <br />
+
+<table class="table table-striped">
     <thead>
-        <tr>
+        <tr class="bg-primary">
             <th>
-                @Html.DisplayNameFor(model => model.NomeProduto)
+                Nome Produto
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantidade)
+                Nome Categoria
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Categoria)
+                Quantidade
             </th>
-            <th></th>
+            <th>
+                Ações
+            </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomeProduto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria.NomeCategoria)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeProduto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categoria.NomeCategoria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-default"><a asp-action="Edit" asp-route-id="@item.Id">Editar</a> </button>
+                    <button class="btn btn-sm btn-default"><a asp-action="Details" asp-route-id="@item.Id">Detalhes</a></button>
+                    <button class="btn btn-sm btn-default"><a asp-action="Delete" asp-route-id="@item.Id">Excluir</a></button>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

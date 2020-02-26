@@ -58,7 +58,7 @@ namespace ControleEstoque
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Categorias}/{action=Index}/{id?}");
+                    template: "{controller=Historicos}/{action=Index}/{id?}");
             });
         }
     }

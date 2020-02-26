@@ -5,21 +5,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalhes do Setor</h2>
+<hr />
 
+<table class="table table-striped">
+    <thead>
+        <tr class="bg-primary">
+            <th>
+                Nome Setor
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.NomeSetor)
+            </td>
+        </tr>
+    </tbody>
+</table>
 <div>
-    <h4>Setor</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NomeSetor)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.NomeSetor)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <button class="btn btn-default">
+        <a asp-action="Edit" asp-route-id="@Model.Id" style="text-decoration:none;">Editar</a>
+    </button>
+    <button class="btn btn-default">
+        <a asp-action="Index" style="text-decoration:none ">Voltar</a>
+    </button>
+
 </div>
