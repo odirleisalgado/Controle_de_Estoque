@@ -3,3 +3,5 @@
 ################################################################################
 
 /ControleDeEstoque/ControleEstoque/appsettings.json
+/ControleDeEstoque/ControleEstoque/appsettings.Development.json
+/ControleDeEstoque/.vs/ControleEstoque/v15
