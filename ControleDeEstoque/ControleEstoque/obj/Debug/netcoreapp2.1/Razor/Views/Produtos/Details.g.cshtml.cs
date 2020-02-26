@@ -125,7 +125,7 @@ using ControleEstoque.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(808, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ed5a5a4016e4927bd90af7eb71a7b73", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d4a4528cdd3490fa7bc3837f7072298", async() => {
                 BeginContext(854, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -160,7 +160,7 @@ using ControleEstoque.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(870, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5e22069c66b44699be1c03cb110b7e6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5696ba66afc047f790dccde73af43cd7", async() => {
                 BeginContext(892, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

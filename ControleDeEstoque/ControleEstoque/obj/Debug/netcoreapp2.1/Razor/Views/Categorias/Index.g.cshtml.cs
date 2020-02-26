@@ -64,7 +64,7 @@ using ControleEstoque.Models;
             WriteLiteral("<br />\r\n<div class=\"jumbotron\">\r\n    <h2>Categorias</h2>\r\n</div>\r\n\r\n<div>\r\n    <button class=\"btn-success\">");
             EndContext();
             BeginContext(261, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6f7e72c343e402cb35dfb6c76efbd84", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "783b3a662dc740588b79b920cbcb825c", async() => {
                 BeginContext(284, 21, true);
                 WriteLiteral("Adicionar Categoria +");
                 EndContext();

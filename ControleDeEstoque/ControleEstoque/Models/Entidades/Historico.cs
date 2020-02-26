@@ -25,6 +25,10 @@ namespace ControleEstoque.Models.Entidades
         [Display(Description = "Quantidade")]
         public int Qtd { get; set; }
 
+        [Required(ErrorMessage = "Por favor, insira uma Data")]
+        [Display(Description = "Data")]
+        public DateTime Data { get; set; }
+        
         public virtual Produto Produto { get; set; }
 
         public virtual Setor Setor { get; set; }

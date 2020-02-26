@@ -5,42 +5,59 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Histórico de Utilização</h2>
+<hr />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<button class="btn btn-success">
+    <a asp-action="Create" style="text-decoration:none; color:white;">Adicionar +</a>
+</button>
+   
+
+<br /> <br />
+<table class="table table-striped">
     <thead>
-        <tr>
+        <tr class="bg-primary">
             <th>
-                @Html.DisplayNameFor(model => model.Qtd)
+                @Html.DisplayNameFor(model => model.Setor)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Produto)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Setor)
+                Quantidade
             </th>
-            <th></th>
+            <th>
+                Data / Hora
+            </th>
+            <th>
+                Ações
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Qtd)
+
+                @Html.DisplayFor(modelItem => item.Setor.NomeSetor)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Produto.NomeProduto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Setor.NomeSetor)
+                @Html.DisplayFor(modelItem => item.Qtd)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                <button class="btn btn-sm btn-default"><a asp-action="Edit" asp-route-id="@item.Id">Editar</a> </button> 
+                <button class="btn btn-sm btn-default"><a asp-action="Details" asp-route-id="@item.Id">Detalhes</a></button>
+                <button class="btn btn-sm btn-default"><a asp-action="Delete" asp-route-id="@item.Id">Excluir</a></button>
+
+                
+                 
+                
             </td>
         </tr>
 }

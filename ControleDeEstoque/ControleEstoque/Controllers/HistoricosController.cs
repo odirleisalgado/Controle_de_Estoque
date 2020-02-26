@@ -59,7 +59,7 @@ namespace ControleEstoque.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,SetorId,ProdutoId,Qtd")] Historico historico)
+        public async Task<IActionResult> Create([Bind("Id,SetorId,ProdutoId,Qtd,Data")] Historico historico)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace ControleEstoque.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,SetorId,ProdutoId,Qtd")] Historico historico)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,SetorId,ProdutoId,Qtd,Data")] Historico historico)
         {
             if (id != historico.Id)
             {

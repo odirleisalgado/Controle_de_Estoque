@@ -5,27 +5,32 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalhes da Categoria</h2>
+<hr />
 
+<table class="table table-striped">
+    <thead>
+        <tr class="bg-primary">
+            <th>
+                Nome Categoria
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+
+                @Html.DisplayFor(model => model.NomeCategoria)
+            </td>
+        </tr>
+    </tbody>
+</table>
 <div>
-    <h4>Categoria</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.NomeCategoria)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.NomeCategoria)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+    <button class="btn btn-default">
+        <a asp-action="Edit" asp-route-id="@Model.Id" style="text-decoration:none;">Editar</a>
+    </button>
+    <button class="btn btn-default">
+        <a asp-action="Index" style="text-decoration:none ">Voltar</a>
+    </button>
+
 </div>

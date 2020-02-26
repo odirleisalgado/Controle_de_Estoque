@@ -5,33 +5,50 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalhes do Histórico</h2>
+<hr />
 
+<table class="table table-striped">
+    <thead>
+        <tr class="bg-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.Setor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                Quantidade
+            </th>
+            <th>
+                Data / Hora
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+
+                    @Html.DisplayFor(model =>  model.Setor.NomeSetor)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Produto.NomeProduto)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Qtd)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Data)
+                </td>
+            </tr>
+    </tbody>
+</table>
 <div>
-    <h4>Historico</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Qtd)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Qtd)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Produto)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Produto.NomeProduto)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Setor)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Setor.NomeSetor)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <button class="btn btn-default">
+        <a asp-action="Edit" asp-route-id="@Model.Id" style="text-decoration:none;">Editar</a>
+    </button>
+    <button class="btn btn-default">
+        <a asp-action="Index"  style="text-decoration:none ">Voltar</a>
+    </button>
+ 
 </div>

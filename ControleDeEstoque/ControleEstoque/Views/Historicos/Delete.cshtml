@@ -5,36 +5,53 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>Deletar Histórico</h2>
+<hr />
+<h4>Deseja excluir o item abaixo?</h4>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Historico</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Qtd)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Qtd)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Produto)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Produto.NomeProduto)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Setor)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Setor.NomeSetor)
-        </dd>
-    </dl>
-    
+    <table class="table table-striped bg-info">
+        <thead>
+            <tr class="bg-primary">
+                <th>
+                    @Html.DisplayNameFor(model => model.Setor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Produto)
+                </th>
+                <th>
+                    Quantidade
+                </th>
+                <th>
+                    Data / Hora
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                    @Html.DisplayFor(model => model.Setor.NomeSetor)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Produto.NomeProduto)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Qtd)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Data)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <button class="btn btn-default">
+            <a asp-action="Index" style="text-decoration:none;">Voltar</a>
+        </button>
     </form>
-</div>
+
